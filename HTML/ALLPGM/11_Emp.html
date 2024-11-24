@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script>
+		let emps=[{id:"jsp-101",name="hello"},{id:"jsp-102",name="hellohi"},{id:"jsp-103",name="hellora"},{id:"jsp-104",name="hellooo"}];
+
+		localStorage.setItem('employees',JSON.stringify(emps));
+		let data=JSON.parse(localStorage.getItem('employees'));
+
+		console.log(data,typeof data)
+	</script>
+</body>
+</html>

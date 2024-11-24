@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function indianTime() 
+		{
+			let obj=new Date();
+			let time=obj.getTime();
+			console.log(obj.toLocaleTimeString());
+		}
+		let interval=setInterval(indianTime,1000);
+
+			setTimeout(()=>
+			{
+				console.log(interval);
+			},5000);
+	</script>
+</body>
+</html>

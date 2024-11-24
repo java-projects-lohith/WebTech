@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<h1 class="bg-light">Js Storage</h1>
+	<div>
+		<button class="btn btn-success" id="minus-btn">Minus</button>
+		<span id="display">00</span>
+		<button class="btn btn-danger" id="plus-btn">Plus</button>
+	</div>
+
+	<script>
+		let minusTag=document.getElementById('minus-btn');
+		let plusTag=document.getElementById('plus-btn');
+		let spanTag=document.getElementById('display');
+		
+		let qty=localStorage.getItem('qty')? localStorage.getItem('qty'):spanTag.innerText=qty;
+
+
+		plusTag.addEventListener('click',function(){
+			qty++;
+			localStorage.aetItem('qty',qty);
+			spanTag.innerText=localStorage.getItem('qty');
+		});
+
+		minusTag.addEventListener('click',function(){
+			if(qty>1)
+			{
+				qty--;
+				localStorage.aetItem('qty',qty);
+				spanTag.innerText=localStorage.getItem('qty');
+			}
+			else
+			{
+				qty+1;
+				spanTag.innerText=qty;
+			}
+		});
+	</script>
+</body>
+</html>

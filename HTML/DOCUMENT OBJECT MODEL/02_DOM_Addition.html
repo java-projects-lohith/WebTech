@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<button id="add" class="btn btn-success btn-md">Addition</button>
+	<h2>Addition of two Numbers:-<span id="display"></span></h2>
+
+	<script>
+		let disTag=document.getElementById("display");
+		let addBtn=document.getElementById("add");
+		addBtn.addEventListener('click',add);
+
+		function add(){
+			let a=10;
+			let b=10;
+			let c=a+b;
+			disTag.innerText=c;
+			console.log(c);
+		}
+
+	</script>
+</body>
+</html>

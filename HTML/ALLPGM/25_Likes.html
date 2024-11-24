@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Likes Card</title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<style>
+	body{
+		font-family: "comic sans ms",sans-serif;
+	}
+	img{
+		border-radius: 20px;
+	}
+</style>
+<body>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header text-center text-white bg-danger">
+						<h2>Are You Like This</h2>
+					</div>
+					<div class="card-body bg-light text-center">
+						<img src="../PROJECT/img2.jpg">
+					</div>
+					<div class="card-footer text-center text-white bg-danger">
+						<button class="btn btn-md btn-outline-white" id="plus">Like Here</button>
+						<span id="display">00</span>
+						<button class="btn btn-md btn-outline-white" id="minus">DisLike Here</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		let plusTag=document.getElementById('plus');
+		let minusTag=document.getElementById('minus');
+		let disTag=document.getElementById('display');
+		let likes=0;
+		disTag.innerText=likes;
+		plusTag.addEventListener('click' ,function(event)
+		{
+			event.preventDefault();
+			likes++;
+			disTag.innerText=likes;
+		})
+		minusTag.addEventListener('click' ,function(event)
+		{
+			event.preventDefault();
+			if(likes>1){
+				likes--;
+				disTag.innerText=likes;
+			}
+		})
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*
+{
+	margin: 0px;
+}
+header
+{
+	background: linear-gradient(45deg,orange,green);
+	height: 70px;
+	align-items: center	;
+	justify-content: space-between;
+}
+header>h1
+{
+	color:rgb(52, 43, 171, 0.5);
+}

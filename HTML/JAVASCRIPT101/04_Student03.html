@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<h1>JS Objects</h1>
+	<script>
+		let student={
+					stuId:"Jsp101",
+					firstName:"Rama",
+					lastName:"Rajesh",
+					birthYear:2000,
+					calcAge:function(){
+						console.log(this);
+						return 2023-this.birthYear;
+
+					},
+					gender:"Male"
+
+					};
+
+		console.log(student.calcAge());//23
+					
+	</script>
+</body>
+</html>

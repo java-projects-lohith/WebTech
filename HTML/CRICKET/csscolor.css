@@ -1,0 +1,46 @@
+body
+{
+	background:linear-gradient(45deg,orange,white,green);
+	font-family: "comic sans ms",san-serif;
+	
+}
+#footer
+{
+	text-align:center;
+	
+	
+}
+h2
+{
+	background:linear-gradient(45deg,orange,white,green);
+	width:350px;
+	text-align:center;
+	margin-left:480px;
+	margin-top:50px;
+	padding:20px;
+	border:2px solid whitesmoke;
+	border-radius:100px 0px ;
+	font-size:25px;
+}
+a
+{
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+}
+img
+{
+	border:1px solid white;
+	border-radius:20px;
+	margin-top:10px;
+}
+#bottom1
+{
+	margin-left:580px;
+	font-size: 25px;
+}
+#bottom2
+{
+	margin-left:495px;
+	font-size:27px;
+}

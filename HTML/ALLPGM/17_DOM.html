@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<h1>DOM Objects</h1>
+	<button class="btn btn-success btn-md" id="inc-btn">Increment</button>
+	<h2>IncrementValue:-<span id="display"></span></h2>
+
+
+<script>
+	let btnTag=document.getElementById("inc-btn");
+	let disTag=document.getElementById("display");
+
+
+	let count=localStorage.getItem("count")?localStorage.getItem("count"):0;
+	console.log(count);
+
+	disTag.innerText=count;//we are reading the value before incrementing
+
+	btnTag.addEventListener('click',counter);//adding event to the btn tag and for every click calling the counter function.
+	localStorage.clear();
+
+	function counter(){
+		count++;
+		localStorage.setItem("count",count);//we are storing the count and value inside local storage
+		disTag.innerText=count;//we are assighning value to span tag
+		localStorage.getItem("count");//accessing the local storage value
+	}
+
+
+</script>
+</body>
+</html>

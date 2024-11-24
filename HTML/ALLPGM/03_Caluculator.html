@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Dom</title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="01_Zomato.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 m-auto">
+				<div class="card mt-5">
+					<div class="card-header bg-success text-center text-white">
+						<h1>Caluculator</h1>
+					</div>
+					<div class="card-body">
+						<form class="form-group" id="log">
+							<div>
+								<input type="text" class="form-control" id="a">
+							</div>
+							<div class="form-group mt-3">
+								<input type="text" class="form-control" id="b">
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<button class="btn btn-success btn-block" id="add">
+										<i class="fa-solid fa-plus"></i>
+									</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-success btn-block" id="sub">
+										<i class="fa-solid fa-minus"></i>
+									</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-success btn-block" id="mul">
+										<i class="fa-solid fa-xmark"></i>
+									</button>
+								</div>
+								<div class="col-md-3">
+									<button class="btn btn-success btn-block" id="div">
+										<i class="fa-solid fa-divide"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="card-footer text-center bg-success text-white">
+						<h2>Total:<span id="total"></span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="03_calc.js"></script>
+
+
+</body>
+</html>

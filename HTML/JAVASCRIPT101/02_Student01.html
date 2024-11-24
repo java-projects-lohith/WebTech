@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<h1>JS Objects</h1>
+	<script>
+		let student={
+					stuId:"Jsp101",
+					firstName:"Rama",
+					lastName:"Rajesh",
+					birthYear:2000,
+					age:23,
+					gender:"Male"
+
+					};
+
+		let info=prompt("What do you want from student!!stuId,firstName,lastName,age,gender");//Reading input from user
+		console.log(info,typeof info);//type of info is String type
+
+		console.log(student.info);//undefined:-It searches info property in student obj info is not available in student object thats why undefined.Through (.Notation)we cant access dynamic properties which means we can access only static properties.
+
+		console.log(student[info]);//23
+
+		if(student[info]){
+			console.log(student[info]);
+		}else{
+			console.log("InvalidSearch");
+		}
+					
+	</script>
+</body>
+</html>

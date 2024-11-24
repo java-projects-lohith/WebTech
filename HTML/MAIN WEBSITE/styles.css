@@ -1,0 +1,24 @@
+.navbar
+{
+	background:linear-gradient(45deg,orange,green,rgb(166,80,155))!important;
+	border-radius:5px;
+}
+.btn
+{
+	background:linear-gradient(45deg,blueviolet,rgb(166,80,155),rebeccapurple)!important;
+	border-radius:7px;
+	color: white !important;
+}
+.bg-success
+{
+	background: linear-gradient(45deg,cyan,grey,orange);
+	border-radius: 8px;
+}
+.bg-dark
+{
+	background: linear-gradient(45deg,orange,rebeccapurple,rebeccapurple);
+}
+.card-header
+{
+	border-radius:10px !important;
+}

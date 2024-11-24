@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		button{
+			background-color: cyan;
+			color: red;
+			cursor: pointer;
+			border-radius: 25px;
+			width: 20%;
+			height: 15vh;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn-inc">Increment</button>
+
+
+	<script>
+		let btnTag=document.getElementById("btn-inc");
+		btnTag.onclick=counter;
+
+		let count=0;
+
+		function counter(){
+			count++;
+			console.log("Count=" +count);
+		}
+
+	</script>
+</body>
+</html>

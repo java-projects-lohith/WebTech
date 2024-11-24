@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<section class="container mt-5"> 
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header bg-success text-center text-white">
+						<h2>Form Modal</h2>
+					</div>
+					<div class="card-body bg-light">
+						<form id="log">
+							<div class="form-group">
+								<input type="text" placeholder="Enter username" class="form-control" id="usn">
+							</div>
+							<div class="form-group">
+								<input type="password" placeholder="Enter Password" class="form-control" id="pw">
+							</div>
+							<div class="form-group">
+								<input type="submit" class="btn btn-success btn-md">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let loginForm=document.getElementById('log');
+		let usnTag=document.getElementById('usn');
+		let pwTag=document.getElementById('pw');
+
+		loginForm.addEventListener('submit',function(event)
+		{
+			event.preventDefault();
+			let userName=usnTag.value;
+			let pw=pwTag.value;
+
+			console.log(userName);
+			console.log(pw);
+		})
+
+
+
+
+
+
+	</script>
+</body>
+</html>

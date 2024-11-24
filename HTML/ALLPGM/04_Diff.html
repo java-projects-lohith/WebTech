@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js DOM</title>
+</head>
+<body>
+	<div id="display">
+		
+	</div>
+
+
+	<script>
+		let fruits=['Apple','Banana','Orange','Mango'];
+		let str=`<ol>`;
+		for(let fruit of fruits)
+		{
+			//console.log(fruit);
+			//str=str+fruit;
+			str+=`<li>${fruit}</li>`;
+		}
+		str+=`</ol>`
+		//console.log(str);
+
+		let displayTag=document.getElementById('display');
+		//displayTag.innerText=str;
+		displayTag.innerHTML=str;
+	</script>
+</body>
+</html>

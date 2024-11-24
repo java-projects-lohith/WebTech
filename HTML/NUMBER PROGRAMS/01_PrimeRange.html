@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function isPrime(n)
+		{
+			if(n==1||n==0) return false;
+
+			for(let i=2;i<n;i++)
+			{
+				if(n%i==0) return false;
+			}
+			return true;
+		}
+		let num=30;
+		function main()
+		{
+			let start=Number(prompt("Enter stsrt"));
+			let end=Number(prompt("Enter End"))
+			for(let i=start;i<=end;i++)
+			{
+				if(isPrime(i))
+				{
+				console.log(i);
+				}
+			}
+		}
+		main();
+	</script>
+</body>
+</html>

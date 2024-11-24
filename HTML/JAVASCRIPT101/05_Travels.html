@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>SRS Travels</h1>
+	<script>
+		let travelsSRS_1={
+
+							id:"SRS101",
+							travelsName:"SRS",
+							bookings:[],
+							book:function(pName,seatNo){
+								console.log(`${pName} is booked ticket in ${this.travelsName} Travels with seatNo of ${seatNo}`);
+								this.bookings.push(`passenger:${pName} ${seatNo} ${this.id}`);
+
+							}
+					   	};
+		let travelsSRS_2={
+							id:"SRS102",
+							travelsName:"SRS",
+							bookings:[]
+							};
+		let book=travelsSRS_1.book;//function book belongs to travels1 that we are storing in a global variable.
+		console.log(travelsSRS_1.bookings);
+		book.call(travelsSRS_1,"Raja Ram",54);
+		console.log(travelsSRS_1.bookings);
+		console.log(travelsSRS_2.bookings);
+		book.call(travelsSRS_2,"Rani Ram",15);
+		console.log(travelsSRS_2.bookings);
+	</script>
+</body>
+</html>

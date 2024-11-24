@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header bg-primary text-center text-white">
+						<h2>Product Details</h2>
+					</div>
+					<div class="card-body text-dark">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="iwatch.jpeg" height="200vh" width="200px">
+							</div>
+							<div class="col-md-8 text-center">
+								<h4>Name:-iwatch modal32</h4>
+								<h5>Price:-<i>&#8377;15000</i></h5>
+								<h5>Quantity:-<i class="fa-solid fa-circle-plus pl-2 pr-2" id="q-inc"></i><span id="qty"></span><i class="fa-solid fa-circle-minus pl-2" id="q-dec"></i></h5>
+								<h5>Total Price:-&#8377;<span id="t-price"></span></h5>
+								<button class="btn btn-primary btn-md">Add To Kart</button>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-primary text-white text-center">
+						<button class="btn btn-primary btn-md" id="like"><i class="fa-regular fa-thumbs-up"></i></button>
+						<span>Likes:<i id="tlike"></i></span>
+						<button class="btn btn-primary btn-md" id="dislike"><i class="fa-regular fa-thumbs-down"></i></button>
+						<span>DisLikes:<i id="tdis"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="likes.js"></script>
+</body>
+</html>

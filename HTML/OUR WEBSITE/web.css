@@ -1,0 +1,177 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.navbar{
+	background-color: #24205b;
+	color: white;
+	font-family: tahoma,serif;
+	overflow: hidden;
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav h2{
+	cursor: pointer;
+}
+body{
+	/*background-image: url(pic1.jpg);
+	background-position: center;
+	background-size: 2000px;*/
+	background-color: lightgray;
+	font-family: times new roman,serif;
+	overflow: scroll;
+	position: absolute;
+}
+.main-menu{
+	text-align: center;
+}
+.main-menu ul{
+	display: inline-flex;
+	list-style: none;
+	margin-right: 100px;
+}
+.main-menu ul li{
+	padding: 10px;
+
+}
+.main-menu ul li a{
+	color: white;
+	padding: 7px;
+}
+.main-menu ul li a i{
+	padding: 8px;
+}
+.active, .main-menu ul li:hover{
+	background: #727182;
+	border-radius: 20px;
+	margin-top: 3px;
+}
+.sub-menu-1{
+	display: none;
+}
+.main-menu ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background-color: #24205b;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.main-menu ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px;
+}
+.main-menu ul li:hover .sub-menu-1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.main-menu ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+.main-menu ul li:hover .sub-menu-1 ul li a:hover{
+	color: yellow;
+}
+.fa-angle-right{
+	float: right;
+}
+.sub-menu-2{
+	display: none;
+}
+.hover-me:hover .sub-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -20px;
+	margin-left: 140px;
+	background-color: #24205b;
+}
+.container{
+	margin-top: 0px;
+}
+#side-bar{
+	height: 100%;
+	width: 200px;
+	background-color: #6b6985;
+    position: absolute;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+#side-bar a{
+	margin: 0px 0px 0px 20px;
+	display: block;
+	color: white;
+	font-size: 18px;
+	text-decoration: underline;
+}
+.row{
+	margin: 20px 20px 0px 200px;
+}
+.card{
+	border-radius: 20px;
+}
+.card-body{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+.card-body p{
+	text-align: justify;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

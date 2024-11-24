@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="01_Zomato.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-4">
+				<button class="btn btn-success btn-block" id="male-emps-btn">MaleEmployees</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-success btn-block" id="female-emps-btn">FemaleEmployees</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-success btn-block" id="all-emps-btn">AllEmployees</button>
+			</div>
+		</div>
+	</div>
+
+	<section class="mt-3">
+		<div class="form-group">
+			<div class="row">
+				<div class="col-md-4 m-auto">
+					<input type="search" class="form-control" placeholder="SearchHereEmps" id="emp-name">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<table class="table">
+			<thead class="text-center bg-success text-white">
+				<th>S.No</th>
+				<th>FirstName</th>
+				<th>LastName</th>
+				<th>Mail</th>
+				<th>Gender</th>
+				<th>Active</th>
+			</thead>
+			<tbody id="emps-data">
+				
+			</tbody>
+		</table>
+	</section>
+
+
+	<script src="01_java.js"> 
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#creator
+		{
+			width:350px;
+			height:250px;
+			box-shadow:0 0 20px black;
+			margin:250px auto;
+			position:relative;
+			border-radius:20px;
+			overflow:hidden;
+		}
+		img
+		{
+			filter:grayscale(100%);
+			border-radius:20px;
+			width:350px;
+			height:250px;
+		}
+		img:hover
+		{
+			filter:grayscale(0%);
+			cursor:pointer;
+		}
+		.content
+		{
+			width:350px;
+			height:250px;
+			box-shadow:0 0 20px black;
+			margin:225px 450px;
+			background:rgb(0, 0, 0, 0.4);
+			text-align:center;
+			position:absolute;
+			top:-225px;
+			left:-451px;
+			transition:all 1s linear 0s;
+			border-radius:20px;
+		}
+		h2
+		{
+			color:orange;
+		}
+		.content:hover
+		{
+			cursor:pointer;
+			transform: translate(900px);
+		}
+		button:hover
+		{
+			background-color: black;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div id="creator">
+		<img src="../Practice/n2.jpg">
+		<div class="content">
+			<h2>JR.NTR</h2>
+			<p>Nandamuri Taraka Rama Rao Jr. (born 20 May 1983), also known as Jr. N.T.R. or Tarak, is an Indian actor who primarily works in Telugu cinema. One of the highest paid Telugu film actors,[1][2] Rama Rao Jr. has won several accolades, including two Filmfare Awards, two state Nandi Awards, and four CineMAA Awards. Since 2012, he has been featured in Forbes India's Celebrity 100 list.[3]</p>
+			<button>About NTR</button>
+		</div>
+	</div>
+</body>
+</html>

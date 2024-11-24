@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Animations</title>
+	<style>
+		div
+		{
+			background:linear-gradient(45deg,orange,blue,green);
+			width:70px;
+			height:70px;
+			position:relative;
+
+			animation-name:square;
+			animation-duration:1s;
+			animation-timing-function:linear;
+			animation-delay:0s;
+			animation-iteration-count:infinite;
+			animation-direction:normal;
+		}
+		@keyframes square
+		{
+			0%,100%
+			{
+				top: 0px;
+				left: 0px;
+			}
+			25%
+			{
+				top: 0px;
+				left: 250px;
+			}
+			50%
+			{
+				top: 250px;
+				left: 250px;
+			}
+			75%
+			{
+				top: 250px;
+				left: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

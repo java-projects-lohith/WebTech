@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>JS Loops</h2>
+
+	<script>
+		let arr=[10,20,30,40];
+
+		console.log("--------for Loop--------");
+		for(let index=0;index<arr.length;index++)
+		{
+			console.log(arr[index]);
+		}
+		console.log("--------for in Loop--------");
+		for(let index in arr)
+		{
+			console.log(arr[index]);
+		}
+		console.log("--------for of Loop--------");
+		for(let index of arr)
+		{
+			console.log(index);
+		}
+		console.log("----------for each method--------");
+		console.log(arr);
+		arr.forEach(function(val,index) {
+			let hike=Math.trunc(val/10);
+			arr[index]=val+hike;
+		})
+		console.log(arr);
+	</script>
+</body>
+</html>

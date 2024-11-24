@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ 
+<body>
+    <p id="para"></p>
+ 
+ 
+ 
+ 
+    <script>
+        var jsonObjectArray = {
+ 
+            // Assigned a JSON array of objects
+            // to the key "books"
+            "books": [
+                { 
+                    "name": "Let Us C", 
+                    "author": "Yashavant Kanetkar" 
+                },
+                { 
+                    "name": "Rich Dad Poor Dad", 
+                    "author": "Robert Kiyosaki " 
+                },
+                { 
+                    "name": "Introduction to Algorithms", 
+                    "author": "Cormen" 
+                },
+            ]
+        };
+ 
+        // Here we accessed the books property of
+        // jsonObjectArray Object.
+        // It returned an object array. Then we 
+        // accessed the first index of the array
+        // (which is an JSON object) using [] syntax
+ 
+        var x = jsonObjectArray.books[2];
+         
+        // Set the inner HTML of "para" paragraph
+        // to the value of variable "x". 
+        document.getElementById("para").innerHTML
+                = x.name + " by " + x.author;
+    </script>
+</body>

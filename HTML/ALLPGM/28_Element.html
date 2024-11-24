@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<title></title>
+</head>
+<body>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card bg-light">
+					<div class="card-header bg-dark text-center text-white">
+						<h2>Caluculator</h2>
+					</div>
+					<div class="card-body bg-light text-center">
+						<form class="form-group">
+							<input type="" name="" class="form-control" id="a">
+							<input type="" name="" class="form-control" id="b">
+						</form>
+						<i class="fa fa-plus-circle" id="inc-btn"></i>
+						<i class="fa fa-minus-circle" id="dec-btn"></i>
+					</div>
+					<div class="card-footer bg-dark text-center text-white">
+						<h2>Ans<span id="total"></span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		let elementA=document.getElementById('a');
+		let elementB=document.getElementById('b');
+		
+		let plusTag=document.getElementById('inc-btn');
+		let minusTag=document.getElementById('dec-btn');
+		let totalTag=document.getElementById('total');
+		
+
+		plusTag.addEventListener('click', function (event) {
+			event.preventDefault();
+			let a=JSON.parse(elementA.value);
+			let b=JSON.parse(elementB.value);
+			
+			let c=a+b;
+			totalTag.innerText=c;	
+		})
+
+		minusTag.addEventListener('click', function (event) {
+			event.preventDefault();
+			let a=JSON.parse(elementA.value);
+			let b=JSON.parse(elementB.value);
+			
+			let c=a-b;
+			totalTag.innerText=c;	
+		})
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js Caluculator</title>
+	<link rel="stylesheet" type="text/css" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="../FAA/css/all.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<section class="container mt-5">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header bg-dark text-center text-white">
+						<h2>Caluculator</h2>
+					</div>
+					<div class="card-body">
+						<form id="tag">
+							<div class="form-group text-center">
+								<input type="text" placeholder="Enter Number" class="form-control" id="val1">
+								<input type="text" placeholder="Enter Number" class="form-control mt-3 mb-3" id="val2">
+								<span>Ans:-<i id="total">00</i></span>
+							</div>
+						</form>
+					</div>
+					<div class="card-footer bg-dark text-center text-white" id="b-body" >
+						<button class="btn btn-outline-white" id="plus"><i class="fa-solid fa-plus "></i></button>
+						<button class="btn btn-outline-white" id="minus"><i class="fa-solid fa-minus "></i></button>
+						<button class="btn btn-outline-white" id="mul"><i class="fa-solid fa-xmark "></i></button>
+						<button class="btn btn-outline-white" id="div"><i class="fa-solid fa-divide "></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		// let loginForm=document.getElementById('tag');
+		let val1El=document.getElementById('val1');
+		let val2El=document.getElementById('val2');
+		let totalTag=document.getElementById('total');
+		// let allBtn=document.getElementById('b-body');
+		let addBtn=document.getElementById('plus');
+		let subBtn=document.getElementById('minus');
+		let mulBtn=document.getElementById('mul');
+		let divBtn=document.getElementById('div');
+
+		addBtn.addEventListener('click',function(event)
+		{
+
+			event.preventDefault();
+			let a=JSON.parse(val1El.value);
+			let b=JSON.parse(val2El.value);
+			let c=a+b;
+			totalTag.innerText=c;
+		})
+		subBtn.addEventListener('click',function(event)
+		{
+
+			event.preventDefault();
+			let a=JSON.parse(val1El.value);
+			let b=JSON.parse(val2El.value);
+			let c=a-b;
+			totalTag.innerText=c;
+		})
+		mulBtn.addEventListener('click',function(event)
+		{
+
+			event.preventDefault();
+			let a=JSON.parse(val1El.value);
+			let b=JSON.parse(val2El.value);
+			let c=a*b;
+			totalTag.innerText=c;
+		})
+		divBtn.addEventListener('click',function(event)
+		{
+
+			event.preventDefault();
+			let a=JSON.parse(val1El.value);
+			let b=JSON.parse(val2El.value);
+			let c=a/b;
+			totalTag.innerText=c;
+		})
+
+	</script>
+</body>
+</html>

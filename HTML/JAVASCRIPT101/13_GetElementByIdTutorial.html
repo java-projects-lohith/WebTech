@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="h1-Tag">Document Object Model</h1>
+	<button id="btn-Tag">Document</button>
+
+
+
+
+	<script>
+		let htmlFile=document;
+		console.log(htmlFile);
+		let headTag=document.head;
+		console.log(headTag);
+		let bodyTag=document.body;
+		console.log(bodyTag);
+
+		// Below Mention Tags are Not Properties of Document object if we are accessing non existing properties the value will be undifined.
+		// let h1Tag=document.body.h1;
+		// console.log(h1Tag);
+		// let btnTag=document.body.button;
+		// console.log(btnTag);
+
+		let h1Tag=document.getElementById("h1-Tag");
+		console.log(h1Tag);
+		let btnTag=document.getElementById("btn-Tag");
+		console.log(btnTag);
+
+
+	</script>
+</body>
+</html>
