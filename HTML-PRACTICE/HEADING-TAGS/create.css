@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin-top: 100px;
+	width: 430px;
+	height: 400px;
+	background-color: lightblue;
+	border-radius: 10px;
+}
+.form-group h2{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	color: darkcyan;
+	font-weight: bold;
+}
+.form-group input{
+	border: 1px solid blue;
+	width: 380px;
+	margin-left: 15px;
+}
+.submit-section > a{
+	margin-left: 23px;
+}
+.submit-section input{
+	border: 1px solid blue;
+	margin-left: 20px;
+}
